@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#EFE9B7"
+    tools:context=".registrar">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="334dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="35dp"
+        android:elevation="4dp"
+        app:cardCornerRadius="10dp"
+        app:cardUseCompatPadding="true">
+
+        <ScrollView
+            android:layout_width="332dp"
+            android:layout_height="411dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_margin="15dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Registrate"
+                        android:textColor="@android:color/black"
+                        android:textSize="28sp"
+                        android:textStyle="bold"
+
+
+                        />
+
+                    <TextView
+                        android:id="@+id/txtsignup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Login"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="4dp"
+                        android:onClick="login"
+
+                        />
+                </RelativeLayout>
+
+
+                <EditText
+                    android:id="@+id/edCedula"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="20dp"
+
+                    android:hint="Cedula"
+                    android:inputType="textPersonName"
+                    android:padding="10dp" />
+
+
+                <EditText
+                    android:id="@+id/edNombre"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="20dp"
+
+                    android:hint="Nombre"
+                    android:inputType="textPersonName"
+                    android:padding="10dp" />
+
+
+                <EditText
+                    android:id="@+id/edApellido"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="20dp"
+
+                    android:ems="10"
+                    android:hint="Apellido"
+                    android:inputType="textPersonName"
+                    android:padding="10dp" />
+                <EditText
+                    android:id="@+id/edTelefono"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="20dp"
+
+                    android:ems="10"
+                    android:hint="Telefono"
+                    android:inputType="textPersonName"
+                    android:padding="10dp"
+                    android:autofillHints="" />
+
+
+                <Button
+                    android:id="@+id/btn_register"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="32dp"
+                    android:background="@drawable/button"
+
+                    android:text="Registrate"
+                    android:textColor="@android:color/black"
+
+
+                    android:textSize="15dp" />
+                <Button
+                    android:layout_width="match_parent"
+                    android:visibility="invisible"
+                    android:layout_height="30dp">
+
+                </Button>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

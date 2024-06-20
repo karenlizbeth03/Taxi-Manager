@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PrincipalActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="403dp"
+        android:layout_height="129dp"
+        android:orientation="horizontal"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="4dp"
+        tools:layout_editor_absoluteY="2dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="277dp"
+            android:layout_height="101dp"
+            android:gravity="center"
+            android:text="BIENVENIDO AL SISTEMA"
+            android:textSize="36sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="138dp"
+            android:layout_height="99dp"
+            app:srcCompat="@drawable/icon_user" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="375dp"
+        android:layout_height="471dp"
+        android:layout_marginTop="112dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="19dp">
+
+        <EditText
+            android:id="@+id/edCalle1"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+
+            android:hint="Calle Principal"
+            android:inputType="textPersonName"
+            android:padding="10dp" />
+
+        <EditText
+            android:id="@+id/edCalle2"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+
+
+            android:hint="Calle Secundaria"
+            android:inputType="textPersonName"
+            android:padding="10dp" />
+
+        <EditText
+            android:id="@+id/edReferencia"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+
+            android:hint="Referencia"
+            android:inputType="textPersonName"
+            android:padding="10dp" />
+
+        <EditText
+            android:id="@+id/edBarrio"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+
+            android:hint="Barrio/Sector"
+            android:inputType="textPersonName"
+            android:padding="10dp" />
+
+        <EditText
+            android:id="@+id/edInfo"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+
+            android:ems="10"
+            android:hint="Informacion adicional"
+            android:inputType="textPersonName"
+            android:padding="10dp" />
+        <EditText
+            android:id="@+id/edCliente"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+
+            android:ems="10"
+            android:hint="Cliente"
+            android:inputType="textPersonName"
+            android:padding="10dp" />
+
+        <Button
+            android:id="@+id/btnSolicitarF"
+
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/button"
+            android:onClick="Siguiente"
+            android:text="Solicitar"
+            android:textColor="@android:color/white"
+            android:textSize="15dp"
+             />
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
